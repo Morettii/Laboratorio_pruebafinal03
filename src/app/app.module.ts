@@ -8,6 +8,10 @@ import { EgresosComponent } from './egresos/egresos.component';
 import { VerUsuariosComponent } from './ver-usuarios/ver-usuarios.component';
 import { VerEgresosComponent } from './ver-egresos/ver-egresos.component';
 
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+
+import { HttpClientModule } from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +22,9 @@ import { VerEgresosComponent } from './ver-egresos/ver-egresos.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule, ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
